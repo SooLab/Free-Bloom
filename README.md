@@ -10,7 +10,7 @@ This repository is the official implementation of [Free-Bloom](https://arxiv.org
 
 [![arXiv](https://img.shields.io/badge/arXiv-FreeBloom-b31b1b.svg)](https://arxiv.org/abs/)![Pytorch](https://img.shields.io/badge/PyTorch->=1.10.0-Red?logo=pytorch)
 
-Code will be released very soon, stay tuned!
+Code will be released very very soon, stay tuned!
 
 ![image-20230924124604776](__assets__/teaser.png)
 
