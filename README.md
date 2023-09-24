@@ -18,7 +18,7 @@ Code will be released very soon, stay tuned!
 
 ## Results
 
-**Flower is blooming**
+**A Flower is blooming**
 
 <table class="center">
     <tr>
