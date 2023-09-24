@@ -1,4 +1,4 @@
-# FreeBloom
+# Free-Bloom
 
 This repository is the official implementation of [Free-Bloom](https://arxiv.org/).
 
