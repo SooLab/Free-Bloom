@@ -10,11 +10,30 @@ This repository is the official implementation of [Free-Bloom](https://arxiv.org
 
 [![arXiv](https://img.shields.io/badge/arXiv-FreeBloom-b31b1b.svg)](https://arxiv.org/abs/2309.14494) ![Pytorch](https://img.shields.io/badge/PyTorch->=1.10.0-Red?logo=pytorch)
 
-Code will be released soon, stay tuned!
 
 ![image-20230924124604776](__assets__/teaser.png)
 
+## Setup
 
+### Requirements
+```cmd
+conda env create -n fb
+conda activate fb
+pip install -r requirements.txt
+```
+
+Installing [xformers](https://github.com/facebookresearch/xformers) is highly recommended for more efficiency and speed on GPUs. 
+To enable xformers, set `enable_xformers_memory_efficient_attention=True` (default).
+
+
+
+
+## Usage
+
+### Generate
+```cmd
+python main.py --config configs/flowers.yaml
+```
 
 ## Results
 
@@ -38,11 +57,19 @@ Code will be released soon, stay tuned!
     <td><img src="__assets__/volcano_eruption1.gif"></td>
     <td><img src="__assets__/volcano_eruption2.gif"></td>
     <td><img src="__assets__/volcano_eruption3.gif"></td>
+    <td><img src="__assets__/volcano_eruption4.gif"></td>
     </tr>
 </table>
 
-
-
+**A rainbow is forming**
+<table class="center">
+    <tr>
+    <td><img src="__assets__/rainbow_forming1.gif"></td>
+    <td><img src="__assets__/rainbow_forming2.gif"></td>
+    <td><img src="__assets__/rainbow_forming3.gif"></td>
+    <td><img src="__assets__/rainbow_forming4.gif"></td>
+    </tr>
+</table>
 
 
 ## Citation
