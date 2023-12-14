@@ -7,7 +7,6 @@ numpy==1.24.2
 omegaconf==2.3.0
 opencv_python==4.7.0.72
 packaging==23.2
-Pillow==9.4.0
 Pillow==10.1.0
 torch==1.13.1
 torchvision==0.14.1
