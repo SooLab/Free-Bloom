@@ -1,0 +1,16 @@
+accelerate==0.17.1
+decord==0.6.0
+diffusers==0.11.1
+einops==0.7.0
+imageio==2.26.0
+numpy==1.24.2
+omegaconf==2.3.0
+opencv_python==4.7.0.72
+packaging==23.2
+Pillow==9.4.0
+Pillow==10.1.0
+torch==1.13.1
+torchvision==0.14.1
+tqdm==4.65.0
+transformers==4.27.1
+xformers==0.0.16

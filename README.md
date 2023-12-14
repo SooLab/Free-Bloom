@@ -17,7 +17,7 @@ This repository is the official implementation of [Free-Bloom](https://arxiv.org
 
 ### Requirements
 ```cmd
-conda env create -n fb
+conda create -n fb python=3.8
 conda activate fb
 pip install -r requirements.txt
 ```
