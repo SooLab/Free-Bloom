@@ -17,7 +17,7 @@ This repository is the official implementation of [Free-Bloom](https://arxiv.org
 
 ### Requirements
 ```cmd
-conda create -n fb python=3.8
+conda create -n fb python=3.10
 conda activate fb
 pip install -r requirements.txt
 ```
@@ -34,6 +34,12 @@ To enable xformers, set `enable_xformers_memory_efficient_attention=True` (defau
 ```cmd
 python main.py --config configs/flowers.yaml
 ```
+
+Change the path of diffusion models to your own for  the `pretrained_model_path` key in config yaml file.
+
+
+
+
 
 ## Results
 

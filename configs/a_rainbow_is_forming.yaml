@@ -1,0 +1,30 @@
+pretrained_model_path: "/data/diffusion_wights/stable-diffusion-v1-5"
+output_dir: "./outputs/a_rainbow_is_forming"
+
+inference_config:
+  diversity_rand_ratio: 0.0
+
+validation_data:
+  prompts:
+    - "The sky, partially cloudy, with faint hints of colors starting to emerge."
+    - "A faint arch of colors becomes visible, stretching across the sky."
+    - "The rainbow gains intensity as the colors become more vibrant and defined."
+    - "The rainbow is now fully formed, displaying its classic arc shape."
+    - "The colors of the rainbow shine brilliantly against the backdrop of the sky."
+    - "The rainbow remains steady, its colors vivid and captivating as the rainbow decorates the sky."
+
+  width: 512
+  height: 512
+  num_inference_steps: 50
+  guidance_scale: 12.5
+  use_inv_latent: True
+  num_inv_steps: 50
+  negative_prompt: "longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer difits, cropped, worst quality, low quality, deformed body, bloated, ugly, unrealistic"
+  interpolate_k: 0
+  attention_type_former: ["self", "former", "first"]
+  attention_type_latter: ["self"]
+  attention_adapt_step: 50  # 0~50
+
+seed: 324423 # 42  # as you like
+mixed_precision: fp16
+enable_xformers_memory_efficient_attention: True
