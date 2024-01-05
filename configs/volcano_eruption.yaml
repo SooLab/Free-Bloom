@@ -1,0 +1,32 @@
+pretrained_model_path: "/data/diffusion_wights/stable-diffusion-v1-5"
+output_dir: "./outputs/volcano_eruption_3"
+
+inference_config:
+  diversity_rand_ratio: 0.1
+
+validation_data:
+  prompts:
+    - "A towering volcano stands against a backdrop of clear blue skies, with no visible signs of activity."
+    - "Suddenly, a plume of thick smoke and ash erupts from the volcano's summit, the plume billowing high into the air."
+    - "Molten lava begins to flow down the volcano's slopes, the lava glowing brightly with intense heat and leaving a trail of destruction in its path."
+    - "Explosions rock the volcano as fiery projectiles shoot into the sky, the projectiles scattering debris and ash in all directions.;"
+    - "The eruption intensifies, with a massive column of smoke and ash ascending into the atmosphere, the column darkening the surrounding area and creating a dramatic spectacle."
+    - "As the eruption reaches its peak, a pyroclastic flow cascades down the volcano's sides, the flow engulfing everything in its path with a deadly combination of hot gases, ash, and volcanic material."
+
+
+
+  width: 512
+  height: 512
+  num_inference_steps: 50
+  guidance_scale: 12.5
+  use_inv_latent: True
+  num_inv_steps: 50
+  negative_prompt: "longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer difits, cropped, worst quality, low quality, deformed body, bloated, ugly, unrealistic"
+  interpolate_k: 0
+  attention_type_former: ["self", "former", "first"]
+  attention_type_latter: ["self"]
+  attention_adapt_step: 40   # 0~50
+
+seed: 17 #133   # as you like
+mixed_precision: fp16
+enable_xformers_memory_efficient_attention: True

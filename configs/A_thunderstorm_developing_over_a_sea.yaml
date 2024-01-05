@@ -1,0 +1,30 @@
+pretrained_model_path: "/data/diffusion_wights/stable-diffusion-v1-5"
+output_dir: "./outputs/A_thunderstorm_developing_over_a_sea"
+
+inference_config:
+  diversity_rand_ratio: 0.1
+
+validation_data:
+  prompts:
+    - "A serene view of the sea under clear skies, with a few fluffy white clouds in the distance."
+    - "Darker clouds gathering at the horizon as the sea starts to become choppy with rising waves.;"
+    - "Lightning streaks across the sky, illuminating the dark clouds, and raindrops begin to fall onto the sea's surface."
+    - "The thunderstorm intensifies with heavy rain pouring down, and strong winds whip up the sea, creating large waves."
+    - "Lightning strikes become more frequent, illuminating the turbulent sea with flashes of light."
+    - "The storm reaches its peak, with menacing dark clouds covering the entire sky, and the sea becomes a tumultuous mass of crashing waves and heavy rainfall."
+
+  width: 512
+  height: 512
+  num_inference_steps: 50
+  guidance_scale: 12.5
+  use_inv_latent: True
+  num_inv_steps: 50
+  negative_prompt: "longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer difits, cropped, worst quality, low quality, deformed body, bloated, ugly, unrealistic"
+  interpolate_k: 0
+  attention_type_former: ["self", "former", "first"]
+  attention_type_latter: ["self"]
+  attention_adapt_step: 30  # 0~50
+
+seed: 3243241  # as you like
+mixed_precision: fp16
+enable_xformers_memory_efficient_attention: True

@@ -2,7 +2,7 @@ pretrained_model_path: "/data/diffusion_wights/stable-diffusion-v1-5"
 output_dir: "./outputs/a_rainbow_is_forming"
 
 inference_config:
-  diversity_rand_ratio: 0.0
+  diversity_rand_ratio: 0.1
 
 validation_data:
   prompts:
